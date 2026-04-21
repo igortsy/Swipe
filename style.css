@@ -49,13 +49,16 @@ body {
     box-sizing: border-box;
     padding: var(--spacing-sm) 0 0 0;
     background-color: var(--bg-white);
+    overflow-x: hidden;
 }
 
 img {
     /* max-width: 100%; */
 }
 /* Layout styles */
-
+main {
+    width: 100%;
+}
 .section-container {
     width: 100%;
     max-width: var(--standart-width);
@@ -281,6 +284,12 @@ main {
     color: var(--purple-2);
 }
 
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .hero p {
     max-width: 480px;
 }
@@ -294,6 +303,11 @@ main {
 }
 /* Hero Content  END */
 /* Partners Section */
+.graphic-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .partners-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -311,6 +325,9 @@ main {
 
 /* Unified platform Section */
 .unified-platform-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     padding: var(--spacing-xl) 0;
 }
 
@@ -329,6 +346,11 @@ main {
 }
 /* Unified platform Section END */
 /* Graphic grid Section */
+.grafic-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .graphic-grid {
     display: grid;
     grid-template-areas: 
@@ -387,6 +409,9 @@ main {
 
 /* Integration Section */
 .integration-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
     color: var(--text-light);
     background-color: var(--primary-accent);
 }
@@ -425,3 +450,70 @@ main {
 }
 
 /* Integration Section END*/
+/* Why Swipe Section */
+.why-swipe-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.why-swipe-section .card-container {
+    display: flex; 
+    margin: var(--spacing-lg) 0;
+}
+
+.why-swipe-section .card-container .card {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.why-swipe-section .card-container .card p {
+    color: var(--text-dark);
+}
+/* Why Swipe Section END */
+
+/* Global Section */
+.global-section {
+    padding: calc(var(--spacing-xl) * 3) 0;
+    width: 100%;
+    background-color: var(--primary-accent);
+    display: flex;
+    justify-content: center;
+    color: var(--text-light);
+    position: relative;
+}
+
+.global-section a {
+    color: var(--blue-1)
+}
+
+.global-section a:hover {
+    color: var(--text-light);
+}
+
+.global-section .card-container {
+    display: flex;
+    margin: calc(var(--spacing-xl) * 2) 0;
+}
+
+.global-section .card-container .card {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.global-section .card-container .card h3 {
+    border-left: 2px solid var(--blue-1);
+    padding: 0 0 0 var(--spacing-sm);
+    line-height: 28px;
+}
+
+#globe {
+    max-width: 844px;
+    opacity: 25%;
+    position: absolute;
+    top: 10%;
+}
